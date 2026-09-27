@@ -3,14 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>流星雨背景</title>
-    <link rel="stylesheet" href="style.css">
+    <title>✨ 流星雨</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        body {
+            width: 100%;
+            height: 100vh;
+            background: #000814;
+            overflow: hidden;
+        }
+        #meteorCanvas {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 { font-size: 3.5rem; text-shadow: 0 0 30px rgba(100, 200, 255, 1); }
+    </style>
 </head>
 <body>
     <canvas id="meteorCanvas"></canvas>
     <div class="content">
-        <!-- 你的页面内容放这里 -->
-        <h1>✨ 流星雨背景效果 ✨</h1>
+        <h1>✨ 流星雨夜空 ✨</h1>
     </div>
     <script src="meteor.js"></script>
 </body>
