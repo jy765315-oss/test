@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0a0a1f 0%, #1a0a2e 100%);
+}
+
+#meteorCanvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 20px rgba(100, 200, 255, 0.8);
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% { text-shadow: 0 0 20px rgba(100, 200, 255, 0.8); }
+    50% { text-shadow: 0 0 40px rgba(100, 200, 255, 1); }
+}
